@@ -220,6 +220,7 @@ h4 {
   background: #f7eae4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
 }
 .btn.fw {
   width: 100%;
@@ -3357,7 +3358,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .footer {
   padding: 30px 0;
-  background: #86A298;
+  background: #575556;
 }
 .footer__container {
   display: flex;
@@ -3365,29 +3366,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .footer__row {
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
+
+.footer__menu {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .footer__menu-item {
-  margin-bottom: 10px;
+  font-weight: 300;
 }
-.footer__menu-item:last-child {
-  margin-bottom: 0;
+.footer__menu-item::before {
+  content: "/";
+  float: left;
+  margin: 0 10px;
 }
-.footer__form {
-  flex: 0 1 393px;
+.footer__menu-item:first-child::before {
+  display: none;
 }
-.footer__form-title {
-  margin-bottom: 28px;
+
+.footer__menu-item-link {
+  color: #fff;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
 }
-.footer__form-input {
-  margin-bottom: 22px;
+.footer__menu-item-link:hover {
+  opacity: 0.7;
 }
-.footer__form-btn {
-  width: 225px;
-  height: 37px;
-  font-size: 18.5px;
-  background: #FCA01F;
+
+.footer__policy {
+  font-weight: 300;
 }
 
 .page-recurring {
