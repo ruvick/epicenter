@@ -58,7 +58,7 @@
 	transition: all 0.3s ease 0s;
 
 	&:hover {
-		color: red;
+		color: #e20612;
 	}
 
 	span {
@@ -70,7 +70,7 @@
 		height: 600px;
 		border-radius: 50%;
 		margin-bottom: 10px;
-		background-color: red;
+		background-color: #e20612;
 
 		&::before {
 			content: '';

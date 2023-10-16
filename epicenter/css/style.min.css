@@ -3118,7 +3118,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: all 0.3s ease 0s;
 }
 .menu-list__link:hover {
-  color: red;
+  color: #e20612;
 }
 .menu-list__link span {
   display: flex;
@@ -3129,7 +3129,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 600px;
   border-radius: 50%;
   margin-bottom: 10px;
-  background-color: red;
+  background-color: #e20612;
 }
 .menu-list__link span::before {
   content: "";
@@ -3434,18 +3434,45 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .page {
   flex: 1 1 auto;
+  padding-bottom: 35px;
+}
+
+.page__inner ._container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .section {
   padding: 0 0;
 }
 
-.main-banner {
-  padding: 150px 0;
-  min-height: 600px;
+.main-content {
+  flex: 1 1 auto;
+  border: 1px solid #000;
+  height: 800px;
+}
+
+.page-index__sidebar {
+  margin-left: 30px;
+}
+
+.sidebar {
+  flex: 0 0 26%;
+  border: 1px solid red;
+}
+
+.banner {
+  display: block;
+  height: 100px;
+  border-radius: 15px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
+  overflow: hidden;
+  border: 1px solid green;
+}
+
+.banner-index {
   background-image: url("../img/main-banner");
 }
 
