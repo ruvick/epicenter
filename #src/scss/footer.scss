@@ -20,6 +20,10 @@
 .footer__menu {
 	align-items: center;
 	margin-bottom: 20px;
+
+	@media (max-width: 612px) {
+		flex-direction: column;
+	}
 }
 
 .footer__menu-item {
@@ -36,6 +40,14 @@
 			display: none;
 		}
 	}
+
+	@media (max-width: 612px) {
+		&::before {
+			display: none;
+		}
+
+		padding: 3.5px 0;
+	}
 }
 
 .footer__menu-item-link {
@@ -50,4 +62,8 @@
 
 .footer__policy {
 	font-weight: 300;
+
+	@media (max-width: 768px) {
+		text-align: center;
+	}
 }
