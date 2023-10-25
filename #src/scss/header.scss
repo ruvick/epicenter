@@ -22,9 +22,12 @@
 .logo-icon {
 	display: flex;
 	align-items: center;
-	flex: 0 0 250px;
-	height: 70px;
+	max-width: 250px;
+	width: 100%;
+	flex: 0 1 250px;
+	/* height: 70px; */
 	border: 1px solid #000;
+	padding-bottom: 6%;
 
 	&:before {
 		content: '';
@@ -38,7 +41,7 @@
 }
 
 .header__menu-list {
-	margin-left: 130px;
+	flex: 0 1 805px;
 }
 
 .menu-list {

@@ -25,7 +25,7 @@ $fontWeight: 400;
 //<ПЕРЕМЕННЫЕ>==========================================================================================================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1440;
 $md1: $maxWidthContainer+12;
 $md2: 991.98;
 $md3: 767.98;
@@ -58,16 +58,15 @@ body {
 
 //<ЗАГОЛОВКИ>=================================================================================================================
 h1 {
-	font-size: 35px;
-	font-weight: 500;
-	line-height: 52.8 / 40 *100%;
-	line-height: 38px;
+	font-size: 32px;
+	line-height: 33 / 32 *100%;
+	font-weight: 700;
 }
 
 h2 {
 	font-size: 32px;
-	font-weight: 500;
-	line-height: 38px;
+	line-height: 33 / 32 *100%;
+	font-weight: 700;
 }
 
 h3 {
@@ -77,9 +76,8 @@ h3 {
 }
 
 h4 {
-	font-size: 25px;
-	font-weight: 500;
-	line-height: 38px;
+	font-size: 26px;
+	line-height: 31.2 / 26 *100%;
 }
 
 .title {
@@ -187,10 +185,23 @@ h4 {
 
 .page-index__main-content {}
 
+.page-index__time-work {
+	margin-bottom: 25px;
+}
+
+.page-index__banner {
+	margin-bottom: 43px;
+}
+
+.page-index__time-work {}
+
+.page-index__ {}
+
+//========================================================================================================================================================
+
+
 .main-content {
 	flex: 1 1 auto;
-	border: 1px solid #000;
-	height: 800px;
 }
 
 .page-index__sidebar {
@@ -199,28 +210,198 @@ h4 {
 
 .sidebar {
 	flex: 0 0 26%;
-	border: 1px solid red;
 }
 
 //========================================================================================================================================================
 
 .banner {
 	display: block;
-	height: 100px;
+	padding-bottom: 9.9%;
 	border-radius: 15px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
-	border: 1px solid green;
-}
-
-.banner-index {
-	background-image: url('../img/main-banner');
 }
 
 //========================================================================================================================================================
 
+.info__inner-cards {
+	display: flex;
+	margin: 0 -12.5px;
+	flex-wrap: wrap;
+}
+
+.info__column {
+	display: flex;
+	padding: 0 12.5px 25px 12.5px;
+	flex: 0 1 33.333%;
+}
+
+.info__card {}
+
+.card-info {
+	flex: 0 1 100%;
+	overflow: hidden;
+	border-radius: 12.37px;
+	padding-bottom: 56%;
+}
+
+._ibg {}
+
+//========================================================================================================================================================
+
+.time-work {
+	padding: 28px;
+	border-radius: 12.62px;
+	background: #f4f4f4;
+}
+
+.time-work__title {
+	margin-bottom: 26px;
+}
+
+.time-work__descp {
+	p {
+		font-size: 18px;
+		line-height: 22px;
+		color: #161615;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.audio-advertising {}
+
+.audio-advertising__title {
+	margin-bottom: 30px;
+}
+
+.audio-advertising__inner {
+	display: flex;
+	margin: 0 -12.5px;
+	flex-wrap: wrap;
+}
+
+.audio-advertising__column {
+	display: flex;
+	padding: 0 12.5px 25px 12.5px;
+	flex: 0 1 33.333%;
+}
+
+.audio-advertising__card {}
+
+.card-advertising {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 100%;
+	padding: 20px 20px 40px 20px;
+	border-radius: 12.37px;
+	background: #f5e4dc;
+	overflow: hidden;
+}
+
+.card-advertising__title {
+	margin-bottom: 20px;
+}
+
+.card-advertising__text {
+	p {
+		font-size: 16px;
+		line-height: 22 / 16 *100%;
+	}
+}
+
+//========================================================================================================================================================
+.sidebar__button-block {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 47px;
+}
+
+.sidebar__btn {
+	font-size: 22px;
+	line-height: 26.4px;
+	color: #fff;
+	border-radius: 13.64px;
+	margin-bottom: 20px;
+	transition: all 0.3s ease 0s;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.sidebar__poster {
+	margin-bottom: 25px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.poster {
+	padding: 25px 20px;
+	border-radius: 12.45px;
+	background: #f4f4f4;
+	overflow: hidden;
+	height: 430px;
+}
+
+.poster__title {
+	margin-bottom: 25px;
+}
+
+.sidebar__question {
+	margin-bottom: 13px;
+}
+
+.question-sidebar {
+	display: flex;
+	align-items: center;
+	padding: 18px 26px;
+	border-radius: 12.45px;
+	background: #f4f4f4;
+	overflow: hidden;
+}
+
+.question-sidebar__title {
+	font-weight: 700;
+}
+
+.sidebar__delivery-details {}
+
+.delivery-details {
+	padding: 18px 26px;
+	border-radius: 12.45px;
+	background: #f4f4f4;
+	overflow: hidden;
+}
+
+.delivery-details__title {
+	margin-bottom: 17px;
+}
+
+.delivery-details__text {
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		color: #161615;
+	}
+}
+
+//========================================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 

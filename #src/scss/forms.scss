@@ -28,6 +28,7 @@
 	// min-width: 144px;
 	// min-height: 36px;
 	font-size: 14px;
+	line-height: 25 /14 *100%;
 	font-weight: 400;
 	color: #000;
 	background: #f7eae4;
@@ -40,6 +41,14 @@
 	&.fw {
 		width: 100%;
 	}
+}
+
+.btn--red {
+	background-color: #D9000D;
+}
+
+.btn--grey {
+	background-color: #8C8B8B;
 }
 
 .button {
