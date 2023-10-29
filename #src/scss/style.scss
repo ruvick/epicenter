@@ -205,11 +205,11 @@ h4 {
 }
 
 .page-index__sidebar {
-	margin-left: 30px;
+	margin-left: 23px;
 }
 
 .sidebar {
-	flex: 0 0 26%;
+	flex: 0 0 23.7%;
 }
 
 //========================================================================================================================================================
@@ -374,6 +374,13 @@ h4 {
 	border-radius: 12.45px;
 	background: #f4f4f4;
 	overflow: hidden;
+	transition: all 0.3s ease 0s;
+
+	@media (min-width: 1024px) {
+		&:hover {
+			color: #AE0018;
+		}
+	}
 }
 
 .question-sidebar__title {
@@ -399,6 +406,95 @@ h4 {
 		line-height: 24px;
 		color: #161615;
 	}
+}
+
+//========================================================================================================================================================
+.text-info {
+	margin-bottom: 25px;
+}
+
+.text-info__tabs {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.text-info__tabs .tabs-block__nav {
+	flex: 0 0 341px;
+	background: #f4f4f4;
+	border-radius: 12.45px;
+	overflow: hidden;
+	padding: 18px;
+}
+
+.text-info__tabs .tabs-block__navitem {
+	font-size: 18px;
+	color: #ae0018;
+	margin-bottom: 30px;
+	transition: all 0.3s ease 0s;
+
+	&._active {
+		color: #161615;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 1024px) {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.text-info__tabs .tabs-block__item {
+	padding: 0 44px;
+}
+
+.text-info__tabs-block-title {
+	margin-bottom: 30px;
+	max-width: 463px;
+	width: 100%;
+}
+
+.text-info__tabs-block-descp p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #161615;
+	margin-bottom: 25px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.text-info__board {
+	display: flex;
+	flex-direction: column;
+	max-width: 341px;
+	width: 100%;
+}
+
+.text-info__board-item {
+	padding: 8px 18px;
+	border-radius: 12.45px;
+	font-size: 21px;
+	line-height: 27px;
+	color: #161615;
+	background: #f2f2f2;
+	overflow: hidden;
+	margin-bottom: 12px;
+	transition: all 0.3s ease 0s;
+
+	span {
+		color: #AE0018;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 }
 
 //========================================================================================================================================================
