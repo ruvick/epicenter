@@ -3127,21 +3127,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 60px;
-  width: 60px;
-  height: 600px;
+  flex: 0 0 67px;
+  width: 67px;
+  height: 67px;
   border-radius: 50%;
   margin-bottom: 10px;
   background-color: #e20612;
+  box-shadow: -17px 15px 35px -20px #000000;
 }
-.menu-list__link span::before {
-  content: "";
-  float: left;
-  flex: 0 0 35px;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #fff;
-  border-radius: 50%;
+.menu-list__link span svg {
+  flex: 0 0 32.09px;
+  width: 32.09px;
+  height: 27px;
 }
 
 .header__popup-link {
@@ -3588,7 +3585,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-radius: 12.45px;
   background: #f4f4f4;
   overflow: hidden;
-  height: 430px;
 }
 
 .poster__title {
@@ -3714,6 +3710,82 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .text-info__board-item:last-child {
   margin-bottom: 0;
+}
+
+.poster__scoreboard {
+  margin-bottom: 23px;
+}
+
+.scoreboard {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 40.4px;
+  border-radius: 10.07px;
+  background: #fff;
+  border: 0.5px solid #d9000d;
+  overflow: hidden;
+  padding: 10px 16px;
+}
+
+.scoreboard__text {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.table-poster__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  border-bottom: 0.5px solid #8c8b8b;
+}
+.table-poster__row:last-child {
+  border-bottom: none;
+}
+
+.table-poster__col {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 31px;
+  margin-right: 30px;
+  flex: 1;
+}
+.table-poster__col:first-child {
+  flex: 1 1 auto;
+}
+.table-poster__col:last-child {
+  margin-right: 0;
+}
+
+.table-poster__value {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.table-poster__indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #8C8B8B;
+  margin-right: 12px;
+}
+.table-poster__indicator.--red {
+  background-color: #D9000D;
+}
+.table-poster__indicator.--green {
+  background-color: #227C26;
+}
+
+.--opacity {
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {
